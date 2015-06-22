@@ -38,7 +38,7 @@ for (var i in ops) {
 	}
 }
 
-ops = ops.join('');
+ops = ops.join('').split('#')[0];
 var result = brainfuck(ops);
 
 console.log(result);
