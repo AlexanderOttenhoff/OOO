@@ -20,4 +20,8 @@ OΟО Is a Turing complete programming language based on Ook! (http://www.danger
 |ΟΟ|N/A|Halt program|
 
 # Implementation
-- Coming Soon
+I've made a simple demo that pretty much offloads all the work onto the first Brainfuck library that turned up in a search on NPM. 
+
+# Examples
+## Hello World
+OΟOOOOOOOOOOOOOOOOOOОΟΟOOOOOOOOOOOOOOOOOOΟООΟОΟOОOOΟOOOOOOOOOOOOOOОΟΟOOOOOOOOOOΟООΟОΟOOOОOOOOOOOOOOOOOOOОOОOOOOOOOОOOΟOΟOΟOOOOOOOOOOOOOOOOОΟΟOOOOOOOOOOΟООΟОΟOОOOΟOΟOΟOOOOOOOOOOOOOOOOOOOOОΟΟOOOOOOOOOOOOOOOOOOOOΟООΟОΟOОООООООOΟOΟOΟOΟOОOOOOOOOОOОООООООООООООOОООООООООООООООООOOΟOΟOOОOΟΟ

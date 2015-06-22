@@ -1,0 +1,26 @@
+{
+  "name": "ooo",
+  "version": "1.0.0",
+  "description": "OΟО is the interpreter for a programming language based off Ook!",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OttoRobotto/OOO.git"
+  },
+  "keywords": [
+    "esoteric",
+    "unicode"
+  ],
+  "author": "Alexander Ottenhoff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OttoRobotto/OOO/issues"
+  },
+  "homepage": "https://github.com/OttoRobotto/OOO#readme",
+  "dependencies": {
+    "brainfuck-javascript": "^0.1.7"
+  }
+}
