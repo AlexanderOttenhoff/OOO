@@ -1,44 +1,32 @@
-var brainfuck = require('brainfuck-javascript');
+const brainfuck = require('brainfuck-javascript');
 
-var arguments = process.argv.slice(2).join().toUpperCase();
+const args = process.argv.slice(2).join().toUpperCase();
 
-var ops = arguments.match(/.{1,2}/g);
+const ops = args.match(/.{1,2}/g).map((m) => {
+  switch (m) {
+    case 'OΟ':
+      return '>';
+    case 'ΟO':
+      return '<';
+    case 'OO':
+      return '+';
+    case 'ОО':
+      return '-';
+    case 'ОO':
+      return '.';
+    case 'OО':
+      return ',';
+    case 'ОΟ':
+      return '[';
+    case 'ΟО':
+      return ']';
+    case 'ΟΟ':
+      return '#';
+    default:
+      return '';
+  }
+}).join('').split('#')[0];
 
-for (var i in ops) {
-	switch(ops[i]) {
-		case 'OΟ':
-			ops[i] = '>';
-			break;
-		case 'ΟO':
-			ops[i] = '<';
-			break;
-		case 'OO':
-			ops[i] = '+';
-			break;
-		case 'ОО':
-			ops[i] = '-';
-			break;
-		case 'ОO':
-			ops[i] = '.';
-			break;
-		case 'OО':
-			ops[i] = ',';
-			break;
-		case 'ОΟ':
-			ops[i] = '[';
-			break;
-		case 'ΟО':
-			ops[i] = ']';
-			break;
-		case 'ΟΟ':
-			ops[i] = '#';
-			break;
-		default:
-			ops[i] = '';
-	}
-}
+const result = brainfuck(ops);
 
-ops = ops.join('').split('#')[0];
-var result = brainfuck(ops);
-
-console.log(result);
+console.log(result.map(a => String.fromCharCode(a)).join(''));
